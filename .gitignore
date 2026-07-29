@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
+.quartz/
+quartz/cli/tui/dist/
+
+# content/ は Vault から自動生成される。手で編集しないこと。
+# ただし GitHub Actions がビルドに使うので、コミット対象に含める（ignore しない）。

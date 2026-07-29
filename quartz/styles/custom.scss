@@ -1,0 +1,209 @@
+@use "./variables.scss" as *;
+
+/* ══════════════════════════════════════════════════════════
+   しくみの庭 — 世界観レイヤー
+   Quartz のデフォルトを上書きして、日本語の読み物として成立させる。
+   設計方針：
+     ・和文の行間を広く（欧文前提の 1.6 では日本語は詰まって見える）
+     ・見出しは明朝、本文はゴシック（思索と実務のコントラスト）
+     ・線は 1px の墨線。影は使わない（紙とインクの比喩を守る）
+   ══════════════════════════════════════════════════════════ */
+
+:root {
+  --paper-line: color-mix(in srgb, var(--darkgray) 14%, transparent);
+}
+
+/* ── 和文タイポグラフィの基礎 ────────────────────────────── */
+body {
+  font-feature-settings: "palt" 1; /* 和文の詰め組み */
+  letter-spacing: 0.02em;
+}
+
+.page > #quartz-body .center article {
+  line-height: 1.95;
+
+  p,
+  li {
+    letter-spacing: 0.03em;
+  }
+
+  /* 段落は字下げではなく余白で切る（Web の作法） */
+  p {
+    margin: 1.35rem 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+  }
+
+  h2 {
+    margin-top: 3.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--paper-line);
+  }
+
+  h3 {
+    margin-top: 2.4rem;
+    color: var(--secondary);
+  }
+
+  /* 強調は色ではなく、下の細線で（和文の太字は潰れやすい） */
+  strong {
+    font-weight: 600;
+    background: linear-gradient(transparent 62%, var(--textHighlight) 62%);
+  }
+
+  /* 引用＝原則・マントラの器 */
+  blockquote {
+    border-left: 2px solid var(--secondary);
+    margin: 2rem 0;
+    padding: 0.2rem 0 0.2rem 1.4rem;
+    font-style: normal;
+    color: var(--darkgray);
+  }
+
+  /* 内部リンクは実線、外部リンクは点線。出典が多いサイトなので区別する */
+  a.internal {
+    background: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--secondary) 45%, transparent);
+    padding: 0 0.08em;
+    border-radius: 0;
+
+    &:hover {
+      background: var(--highlight);
+    }
+  }
+
+  a.external {
+    border-bottom: 1px dotted color-mix(in srgb, var(--tertiary) 60%, transparent);
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: var(--paper-line);
+    margin: 3rem auto;
+    width: 100%;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.3rem;
+  }
+
+  li {
+    margin: 0.5rem 0;
+  }
+
+  /* 出典URLの列挙が多いので、長いURLで崩れないように */
+  a {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* ── サイトタイトル ──────────────────────────────────────── */
+.page-title,
+h1.page-title a {
+  font-family: var(--headerFont);
+  letter-spacing: 0.18em;
+  font-weight: 500;
+}
+
+/* ── トップページの一行マニフェストを大きく見せる ─────────── */
+body[data-slug="index"] article > blockquote:first-of-type {
+  border-left: none;
+  border-top: 1px solid var(--paper-line);
+  border-bottom: 1px solid var(--paper-line);
+  padding: 1.8rem 0;
+  margin: 2.5rem 0;
+  font-family: var(--headerFont);
+  font-size: 1.15rem;
+  line-height: 2.1;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--dark);
+}
+
+/* ── サイドバー：静かに ─────────────────────────────────── */
+.sidebar {
+  .explorer,
+  .toc,
+  .backlinks,
+  .graph {
+    font-size: 0.86rem;
+    letter-spacing: 0.02em;
+  }
+
+  h3 {
+    font-family: var(--headerFont);
+    letter-spacing: 0.14em;
+    font-weight: 500;
+    opacity: 0.75;
+  }
+}
+
+/* ── タグ ────────────────────────────────────────────────── */
+.tags > li > a,
+a.tag-link {
+  background: none;
+  border: 1px solid var(--paper-line);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+
+  &:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+  }
+}
+
+/* ── コールアウト（広告表記など）は主張しすぎない ─────────── */
+.callout {
+  border-radius: 2px;
+  border-left-width: 2px;
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+
+/* ── フォルダ一覧・記事リスト ────────────────────────────── */
+.page-listing,
+ul.section-ul {
+  li.section-li {
+    border-bottom: 1px solid var(--paper-line);
+    padding: 0.9rem 0;
+    margin: 0;
+  }
+
+  .meta {
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    opacity: 0.7;
+  }
+}
+
+/* ── フッター ────────────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--paper-line);
+  padding-top: 1.6rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+}
+
+/* ── モバイル：余白を締める ─────────────────────────────── */
+@media all and ($mobile) {
+  .page > #quartz-body .center article {
+    line-height: 1.9;
+
+    p {
+      margin: 1.15rem 0;
+    }
+  }
+}
