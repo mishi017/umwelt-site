@@ -115,7 +115,12 @@ h1.page-title a {
 }
 
 /* ── トップページの一行マニフェストを大きく見せる ─────────── */
-body[data-slug="index"] article > blockquote:first-of-type {
+/* ⚠️ 2026-08-03 修正：元は `body[data-slug="index"] article > blockquote` だったが、
+   上の汎用 blockquote ルール（`.page > #quartz-body .center article` 配下＝ID を含む）に
+   特異度で負けており、border-left / padding / margin / color が効いていなかった。
+   （結果：左線が残ったまま上下線が足され、三方が囲まれた状態になっていた）
+   ID を含む同じ土台の上に載せて特異度を上げる。 */
+body[data-slug="index"] .page > #quartz-body .center article > blockquote:first-of-type {
   border-left: none;
   border-top: 1px solid var(--paper-line);
   border-bottom: 1px solid var(--paper-line);
@@ -127,6 +132,134 @@ body[data-slug="index"] article > blockquote:first-of-type {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--dark);
+}
+
+/* ══════════════════════════════════════════════════════════
+   トップページ「背骨型」（Claude Design 1a / 2026-08-03）
+   ねらい：108ページの庭に「最初の一歩」を作る。
+   目次を並べるのではなく、玄関に三株だけ置いて、そこから歩かせる。
+   実装層はここ（CSS）と pages/index.md のみ。JS・コンポーネント改修なし。
+   ══════════════════════════════════════════════════════════ */
+
+/* ⚠️ セレクタの土台について（2026-08-03）
+   Markdown の `<small class="garden-caption">` は Quartz が段落で包むため、
+   実際の DOM は `<p><small class="garden-caption"></small></p><ul>…</ul>` になる。
+   したがって `.garden-caption + ul` は**一致しない**（ul は p の兄弟であって small の兄弟ではない）。
+   `p:has(> .garden-caption) + ul` で受ける。
+   あわせて、上の汎用ルールが ID（#quartz-body）を含み特異度が高いため、
+   同じ土台の上に載せないと margin / padding が上書きできない。 */
+body[data-slug="index"] .page > #quartz-body .center article {
+  /* ── 小見出し（キャプション）：本文の流れを止めずに区切る ── */
+  p:has(> .garden-caption) {
+    margin: 3rem 0 0.2rem;
+  }
+
+  .garden-caption {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    color: var(--gray);
+  }
+
+  /* ── 背骨リスト：キャプション直後の ul を「三株」として組む ── */
+  p:has(> .garden-caption) + ul {
+    padding-left: 0;
+    margin: 0.6rem 0 0;
+
+    li {
+      list-style: none;
+      padding: 1.1rem 0;
+      margin: 0;
+      border-bottom: 1px solid var(--paper-line);
+      line-height: 1.85;
+
+      /* 株の名前だけ明朝に上げて、説明文と段差をつける */
+      a.internal {
+        font-family: var(--headerFont);
+        font-size: 1.1rem;
+        letter-spacing: 0.04em;
+        border-bottom: none;
+        margin-right: 0.2em;
+
+        &:hover {
+          background: var(--highlight);
+        }
+      }
+    }
+  }
+
+  /* ── 今日の庭から：日々書き換わる1行。主張は控えめに ── */
+  .garden-today {
+    margin: 0.6rem 0 0;
+
+    p {
+      margin: 0;
+      padding: 1rem 0 1.2rem;
+      font-size: 0.94rem;
+      line-height: 1.95;
+      color: var(--darkgray);
+    }
+
+    /* 日付は記号として置く。コードの見た目を消す */
+    code {
+      background: none;
+      padding: 0;
+      margin-right: 0.5em;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      color: var(--gray);
+    }
+  }
+
+  /* ── 索引：ページ末尾の一行。歩き終えた人向けなので静かに ── */
+  p:has(> .garden-index) {
+    margin: 0.5rem 0 0;
+  }
+
+  .garden-index {
+    display: block;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    color: var(--gray);
+
+    a.internal {
+      border-bottom: none;
+      color: var(--gray);
+
+      &:hover {
+        color: var(--secondary);
+        background: none;
+        border-bottom: 1px solid
+          color-mix(in srgb, var(--secondary) 45%, transparent);
+      }
+    }
+  }
+}
+
+/* ── モバイル：背骨と索引だけが残る一本道にする（1g） ── */
+@media all and ($mobile) {
+  body[data-slug="index"] .page > #quartz-body .center article {
+    p:has(> .garden-caption) {
+      margin-top: 2.4rem;
+    }
+
+    .garden-caption {
+      letter-spacing: 0.18em;
+    }
+
+    p:has(> .garden-caption) + ul li {
+      padding: 0.95rem 0;
+
+      a.internal {
+        font-size: 1.05rem;
+      }
+    }
+
+    .garden-index {
+      line-height: 2.2;
+    }
+  }
 }
 
 /* ── サイドバー：静かに ─────────────────────────────────── */
