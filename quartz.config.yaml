@@ -8,8 +8,11 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
+  # アクセス解析：GoatCounter（Cookie不使用・同意バナー不要・非商用は無料）
+  # ダッシュボード → https://umwelt.goatcounter.com
   analytics:
-    provider: null
+    provider: goatcounter
+    websiteId: umwelt
   locale: ja-JP
   baseUrl: mishi017.github.io/umwelt-site
   ignorePatterns:
