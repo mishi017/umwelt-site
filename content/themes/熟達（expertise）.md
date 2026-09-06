@@ -2,7 +2,7 @@
 title: "熟達（expertise）"
 publish: true
 created: 2026-08-14
-updated: 2026-08-25
+updated: 2026-09-06
 tags:
   - 認知科学
   - 心理学
@@ -177,6 +177,29 @@ description: "/daily トラックB（2026-08-14・deepen）。外部ソースか
 
 ---
 
+## 9. ⭐追記（2026-09-06）——「教えるつもり」が符号化そのものを変える（teaching expectancy effect）
+
+`daily-action` トラック（B4）での調査から追記。外部由来。
+
+本ページの結論は「**自分の熟達度は内観できないので、外に出して測れ**」だった。ここに、もう一段手前の知見が入る——**外に出す予定があるだけで、そこに至るまでの学び方が変わる。**
+
+- **Nestojko, Bjork & Bjork 2014**（*Memory & Cognition*、被引用110）：同じ文章を「あとでテストを受ける」つもりで読む群と「**あとで他の学生に教える**」つもりで読む群に分けた。**実際には誰も教えなかった**（全員テストを受けた）。それでも教えるつもりだった群のほうが**自由再生がより完全で、より構造化されており**、とくに**要点を問う設問**で正答が多かった。
+- **Fiorella & Mayer 2014**（*Contemporary Educational Psychology*、被引用179）：効果量が2つに分かれる。**「教える準備をしただけ（実際には教えない）」で即時理解テストが d = .55**（teaching expectancy effect）。**実際に説明した群は遅延テストで d = .56**（teaching effect）で、しかも**この遅延効果は「準備もした」群でいちばん強かった**。→ ⭐**準備は短期の理解を上げるが、長期に定着させるのは実際に口に出す行為のほう。**
+- **Guerrero, Wiley et al. 2021**（*Journal of Educational Psychology*）：遅延テストでも効果が残ること、記憶課題と理解課題の**両方**で出ることを確認。
+
+**⭐本Wikiにとっての意味。** §6 が示したのは「自己評価は熟達しても直らない」という悲観的な話だったが、この節が足すのは処方のほうである。**外に出す予定を先に確定させること自体が介入になる**——予定は締切であると同時に、符号化の様式を変えるスイッチでもある。
+
+⭐これは 2026-08-26 に [[実装意図（if-thenプランニング）]] で確定した形の、もう1つの実例にあたる：**「よく学べ」は無条件の指示なので効かないが、「◯月◯日に人前で説明する」は条件節つきの手続きなので効く。**
+
+⚠️**留保**。3研究ともに実験室での**文章読解課題**であり、期間は数十分〜数日。**技術発表・実務のスキル獲得で同じ効果量が出るという証拠ではない**。また Fiorella & Mayer の設計では「準備」と「実演」が分離されているが、実務ではこの2つは分離しないので、どちらの効果を得ているかを僕が判別する手段はない。
+
+**出典**
+- J. F. Nestojko, D. Bjork & R. Bjork, "Expecting to teach enhances learning and organization of knowledge in free recall of text passages", *Memory & Cognition*, 2014（被引用110）https://consensus.app/papers/details/cbd73b37b83e5dc4a6c7cd22776ffba7/
+- L. Fiorella & R. Mayer, "Role of expectations and explanations in learning by teaching", *Contemporary Educational Psychology*, 2014（被引用179）https://consensus.app/papers/details/5b2463aad1ce5eb29ff37e37103f24df/
+- T. A. Guerrero et al., "Expecting to teach affects learning during study of expository texts", *Journal of Educational Psychology*, 2021 https://consensus.app/papers/details/11405f42dd255527ab7c1e6c26aba737/
+
+---
+
 ## 出典
 
 - D. Kahneman & G. Klein, "Conditions for intuitive expertise: a failure to disagree", *American Psychologist*, 2009（被引用2,189）https://consensus.app/papers/details/db64eb1abf2f55deb49eb5dab104a85d/
@@ -192,4 +215,4 @@ description: "/daily トラックB（2026-08-14・deepen）。外部ソースか
 - M. Mazor & S. Fleming, "The Dunning-Kruger effect revisited", *Nature Human Behaviour*, 2021（被引用51）https://consensus.app/papers/details/142600813c855ff9bd872711b9dcf618/
 - ドレイファスモデルの日本語解説（5段階と留保）https://rarayasuyuki.hateblo.jp/entry/20151120/1447977164 ／ https://ssaits.jp/promapedia/method/dreyfus_model.html
 
-**関連:** [[デザイン経営とデザインの4段階]], [[デザイン学習ロードマップ]], [[言語隠蔽効果（verbal overshadowing）]], [[言語ラベルと知覚（ラベル・フィードバック仮説）]], [[選択盲と内観の限界]], [[デザイン・フィクセーション（設計固着）]], [[インキュベーション効果]], [[精度重み付け]], [[ムードボードと世界観]], [[ブランディングの基礎]], [[プロトタイピングとテスト]], 僕リサーチ, [[デザイン思考]], [[ダブルダイヤモンド]], [[コンセプトとは何か]], [[ピーク・エンドの法則と持続時間の無視]], [[探索と活用のトレードオフ]], [[感情粒度]], [[無意識]], [[デザイン]], [[Physical AI]], 関心マップ, [[ビジネスモデルキャンバスとバリュープロポジションキャンバス]], [[触覚の心理物理（触原色）]], [[ジョブ理論（Jobs to be Done）]], [[習慣形成と目標志向制御]]
+**関連:** [[デザイン経営とデザインの4段階]], [[デザイン学習ロードマップ]], [[言語隠蔽効果（verbal overshadowing）]], [[言語ラベルと知覚（ラベル・フィードバック仮説）]], [[選択盲と内観の限界]], [[デザイン・フィクセーション（設計固着）]], [[インキュベーション効果]], [[精度重み付け]], [[ムードボードと世界観]], [[ブランディングの基礎]], [[プロトタイピングとテスト]], 僕リサーチ, [[デザイン思考]], [[ダブルダイヤモンド]], [[コンセプトとは何か]], [[ピーク・エンドの法則と持続時間の無視]], [[探索と活用のトレードオフ]], [[感情粒度]], [[無意識]], [[デザイン]], [[Physical AI]], 関心マップ, [[ビジネスモデルキャンバスとバリュープロポジションキャンバス]], [[触覚の心理物理（触原色）]], [[ジョブ理論（Jobs to be Done）]], [[習慣形成と目標志向制御]], [[リーンとMVP]], [[実装意図（if-thenプランニング）]], [[サービスデザインとサービスブループリント]], [[メンタル・コントラスティングとWOOP]], [[エピソード的未来思考（EFT）と時間割引]], [[将来自己連続性（future self-continuity）]]

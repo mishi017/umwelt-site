@@ -2,7 +2,7 @@
 title: "リーンとMVP"
 publish: true
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-09-05
 tags:
   - デザイン
   - 新規事業
@@ -174,4 +174,4 @@ Ries の正式定義（[Lean Startup Co.](https://leanstartup.co/resources/artic
 - Lortie, Cox, DeRosset, Thompson & Kelly「Unpacking the minimum viable product (MVP): a framework for use, goals and essential elements」*Journal of Small Business and Enterprise Development* 32(1) https://www.emerald.com/insight/content/doi/10.1108/jsbed-02-2024-0075/full/html
 - 「Industries, frameworks, and key drivers of lean startup: a systematic literature review」2024 https://www.scielo.sa.cr/scielo.php?script=sci_arttext&pid=S1659-33592024000200051
 
-**関連:** [[デザイン]], [[デザイン学習ロードマップ]], [[ビジネスモデルキャンバスとバリュープロポジションキャンバス]], [[ジョブ理論（Jobs to be Done）]], [[プロトタイピングとテスト]], [[ダブルダイヤモンド]], [[デザイン思考]], 僕リサーチ, [[コンセプトとは何か]], [[コンセプトメイキング]], [[デザイン経営とデザインの4段階]], [[ブランディングの基礎]], [[ペルソナとジャーニーマップ]], [[デザイン・フィクセーション（設計固着）]], [[熟達（expertise）]], [[精度重み付け]], [[探索と活用のトレードオフ]], [[習慣形成と目標志向制御]], 実装意図（if-thenプランニング）, [[サードプレイス]], [[雰囲気の美学（アトモスフィア）]], [[インテリアの要素（家具・照明・素材）]], [[パタン・ランゲージ]], [[Physical AI]], [[投資・経済]], [[AI・テクノロジー]], やりたいことリスト, , 関心マップ
+**関連:** [[デザイン]], [[デザイン学習ロードマップ]], [[ビジネスモデルキャンバスとバリュープロポジションキャンバス]], [[ジョブ理論（Jobs to be Done）]], [[プロトタイピングとテスト]], [[ダブルダイヤモンド]], [[デザイン思考]], 僕リサーチ, [[コンセプトとは何か]], [[コンセプトメイキング]], [[デザイン経営とデザインの4段階]], [[ブランディングの基礎]], [[ペルソナとジャーニーマップ]], [[デザイン・フィクセーション（設計固着）]], [[熟達（expertise）]], [[精度重み付け]], [[探索と活用のトレードオフ]], [[習慣形成と目標志向制御]], [[実装意図（if-thenプランニング）]], [[サードプレイス]], [[雰囲気の美学（アトモスフィア）]], [[インテリアの要素（家具・照明・素材）]], [[パタン・ランゲージ]], [[Physical AI]], [[投資・経済]], [[AI・テクノロジー]], やりたいことリスト, , 関心マップ, [[サービスデザインとサービスブループリント]], [[メンタル・コントラスティングとWOOP]], [[スペキュラティヴデザインと未来洞察]], [[エピソード的未来思考（EFT）と時間割引]], [[体験経済とアルベルゴ・ディフーゾ]]
