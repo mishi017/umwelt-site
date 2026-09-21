@@ -2,7 +2,7 @@
 title: "光の非視覚作用（ipRGC・メラノピックEDI）"
 publish: true
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-09-20
 tags:
   - 脳科学
   - 光
@@ -69,4 +69,4 @@ description: "/daily トラックB（2026-07-29・expand＝🔲隣接の未知�
 - J. Lin et al. (2023) "Association of time spent in outdoor light and genetic risk with the incidence of depression", *Translational Psychiatry* — https://consensus.app/papers/details/7191917101f953be8a6ba846ce6145c7/
 - CIE TN 015:2023（第2回国際ワークショップ技術ノート）— https://files.cie.co.at/CIE_TN_015_2023.pdf
 
-**関連:** [[神経科学]], [[神経建築学]], [[アロスタシス]], [[内受容推論]], [[身体性]], [[ウェルビーイング]], [[インテリアの要素（家具・照明・素材）]], [[色彩理論]], [[環世界]], [[能動的推論]], [[デザイン]]
+**関連:** [[神経科学]], [[神経建築学]], [[アロスタシス]], [[内受容推論]], [[身体性]], [[ウェルビーイング]], [[インテリアの要素（家具・照明・素材）]], [[色彩理論]], [[環世界]], [[能動的推論]], [[デザイン]], [[非周期成分（1／f・スペクトル指数）]]

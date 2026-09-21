@@ -2,7 +2,7 @@
 title: "メンタル・コントラスティングとWOOP"
 publish: true
 created: 2026-09-02
-updated: 2026-09-05
+updated: 2026-09-18
 tags:
   - 心理学
   - 動機づけ
@@ -222,4 +222,4 @@ Wang 2021 の総標本 15,907人のうち、**13,909人（87.44%）が Kizilcec 
 - Gabriele Oettingen (2014) *Rethinking Positive Thinking: Inside the New Science of Motivation*（WOOP の命名と一般向けパッケージ化。⚠️原著未取得、二次資料による）
 - 論文内で引用されている一次研究：Kappes & Oettingen (2011) *JESP*「Positive fantasies about idealized futures sap energy」／Oettingen et al. (2009)（energization の媒介、収縮期血圧）／Kappes & Oettingen (2014)／Kappes et al. (2012a, 2012b, 2013)／Kizilcec & Cohen (2017)／Sailer et al. (2015)／Wittleder et al. (2019)／Adriaanse et al. (2010)／Kirk et al. (2013)／James (1890/1950)
 
-**関連:** [[実装意図（if-thenプランニング）]], [[習慣形成と目標志向制御]], [[リーンとMVP]], [[熟達（expertise）]], [[選択盲と内観の限界]], [[インキュベーション効果]], [[感情粒度]], [[内受容推論]], [[ポリヴェーガル理論]], [[精度重み付け]], [[探索と活用のトレードオフ]], [[能動的推論]], [[無意識]], [[自由意志]], [[ウェルビーイング]], [[コンセプトとは何か]], [[ジョブ理論（Jobs to be Done）]], [[サービスデザインとサービスブループリント]], , やりたいことリスト, 関心マップ, [[エピソード的未来思考（EFT）と時間割引]], [[将来自己連続性（future self-continuity）]]
+**関連:** [[実装意図（if-thenプランニング）]], [[習慣形成と目標志向制御]], [[リーンとMVP]], [[熟達（expertise）]], [[選択盲と内観の限界]], [[インキュベーション効果]], [[感情粒度]], [[内受容推論]], [[ポリヴェーガル理論]], [[精度重み付け]], [[探索と活用のトレードオフ]], [[能動的推論]], [[無意識]], [[自由意志]], [[ウェルビーイング]], [[コンセプトとは何か]], [[ジョブ理論（Jobs to be Done）]], [[サービスデザインとサービスブループリント]], , やりたいことリスト, 関心マップ, [[エピソード的未来思考（EFT）と時間割引]], [[将来自己連続性（future self-continuity）]], [[ポートフォリオと実践（語りの台本と引用のルール）]], [[発火条件を外に置く（開始の設計）]]
