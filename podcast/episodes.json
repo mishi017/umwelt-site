@@ -1,0 +1,28 @@
+{
+  "_README": "ポッドキャストの台帳。tools/feed.mjs がこれを読んで quartz/static/podcast/feed.xml を作る。音声を podcast/audio/ に置いて、ここに1行足して push すれば配信される。音声が無い回はフィードに載らないので、先に予定だけ書いておいてよい。",
+
+  "title": "しくみの庭",
+  "description": "「正しいかどうか」ではなく「関わる全員の脳に何が起きるか」から考える——脳起点思考の実験ログです。時間窓、予測、そして予測が外れたときに自分の考えを捨てられるか。調べたことも外れた予測も、そのまま話しています。全部 https://mishi017.github.io/umwelt-site に置いてあります。",
+  "author": "ゆうだい",
+  "_comment_email": "⚠️ このメールアドレスは RSS に載り、public リポジトリにも入るので誰でも読める。Apple Podcasts の審査では itunes:owner のメールが必須（登録確認がここに届く）なので空にはできない。気になるならポッドキャスト専用のエイリアスに変えること。",
+  "email": "mishi0710@gmail.com",
+  "language": "ja",
+  "category": "Science",
+  "subcategory": "Social Sciences",
+  "image": "cover.jpg",
+  "guidPrefix": "shikumi",
+
+  "_comment_episodes": "id は発信ネタ帳の日付と揃える。file は podcast/audio/ 配下のファイル名。duration は HH:MM:SS。link は note の記事URL（あれば）。",
+  "episodes": [
+    {
+      "id": "2026-09-06",
+      "number": 1,
+      "date": "2026-09-21",
+      "title": "スターバックスは、あなたが過ごした2時間に一円も請求していない",
+      "description": "同じコーヒー豆が、売り方ひとつで値段の桁を4回変える。そして体験経済を提唱した本人が「多くの企業は、いちばんいいものをタダで配っている」と書いている、という話。",
+      "duration": "00:03:40",
+      "file": "",
+      "link": ""
+    }
+  ]
+}

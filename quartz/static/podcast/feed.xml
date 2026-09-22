@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>しくみの庭</title>
+    <link>https://mishi017.github.io/umwelt-site</link>
+    <language>ja</language>
+    <description>脳と心・デザイン・どう生きるか。調べたことを、そのまま話しています。台本も出典も全部 https://mishi017.github.io/umwelt-site に置いてあります。</description>
+    <itunes:summary>脳と心・デザイン・どう生きるか。調べたことを、そのまま話しています。台本も出典も全部 https://mishi017.github.io/umwelt-site に置いてあります。</itunes:summary>
+    <itunes:author>ゆうだい</itunes:author>
+    <itunes:owner>
+      <itunes:name>ゆうだい</itunes:name>
+      <itunes:email>mishi0710@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://mishi017.github.io/umwelt-site/static/podcast/cover.jpg"/>
+    <itunes:category text="Science">
+      <itunes:category text="Social Sciences"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <lastBuildDate>Sun, 20 Sep 2026 04:32:02 GMT</lastBuildDate>
+
+  </channel>
+</rss>
